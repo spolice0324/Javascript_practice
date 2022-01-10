@@ -1,6 +1,5 @@
 export function helloSomeone(a) {
    
-    
     if (a !== "" && typeof a == 'string')
         console.log("Hello " + a + "!");
     else if (a === "")
