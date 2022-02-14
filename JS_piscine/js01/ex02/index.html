@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>Discount calculator</title>
+    <script src="calc.js" defer></script>
+</head>
+
+<body>
+    <h1>Discount calculator</h1>
+<form>
+        <div> 상품명: <input id='menuName' type="text" onchange="printMenu()"/></div>
+        <div> 금액:  <input id='menuPrice' type="number" onchange="printPrice()" min="0" /></div>
+        <div> 멤버십 회원입니까? <input type="checkbox" id="member" onclick = "checkMember()"> </input> </div>
+        <div> 멤버십 등급 <select id = "membership" name = "membership" onchange="checkOption()">
+            <option value="">--선택--</option>
+            <option value="lv1">Lv1</option>
+            <option value="lv2">Lv2</option>
+            <option value="lv3">Lv3</option>
+            </select>
+        </div>
+</form>
+<hr>
+
+<time datetime = ""></time>
+
+<ul>
+    <li class ="bill_menuName"> </li>
+    <li class ="bill_menuPrice"></li>
+    <li class ="bill_membership"> </li>
+
+</ul>
+
+</body>
+</html>
