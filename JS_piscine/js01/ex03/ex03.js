@@ -23,3 +23,4 @@ function alertWindow(e) // 메뉴 선택시 알림창
     const selectSection = select.querySelector('h2').innerText;
      alert(`${e.target.innerText}(을)를 선택하셨습니다!`)
 }
+
